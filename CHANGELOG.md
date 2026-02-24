@@ -1,5 +1,11 @@
 # bloommx
 
+## 1.0.1
+
+### Patch Changes
+
+- [`ae5349e`](https://github.com/rafaeelaudibert/bloommx/commit/ae5349e3e7ebd0250a6731d194c66475842debeb) Thanks [@rafaeelaudibert](https://github.com/rafaeelaudibert)! - Add top-level `main` and `types` fields to package.json for backward compatibility with `moduleResolution: "node"` in TypeScript
+
 ## 1.0.0
 
 ### Major Changes

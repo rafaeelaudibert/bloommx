@@ -1,6 +1,6 @@
 {
   "name": "bloommx",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Lightweight free email domain checker via Bloom filter",
   "type": "module",
   "exports": {

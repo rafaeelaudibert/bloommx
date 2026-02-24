@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Lightweight free email domain checker via Bloom filter",
   "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/src/index.js",

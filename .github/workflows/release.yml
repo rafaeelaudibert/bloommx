@@ -37,6 +37,8 @@ jobs:
       - name: Version
         if: steps.changesets.outputs.has == 'true'
         run: bun run version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build
         if: steps.changesets.outputs.has == 'true'

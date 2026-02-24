@@ -1,0 +1,58 @@
+{
+  "name": "bloommx",
+  "version": "0.0.1",
+  "description": "Lightweight free email domain checker via Bloom filter",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/src/index.js",
+      "types": "./dist/src/index.d.ts"
+    },
+    "./micro": {
+      "import": "./dist/src/micro.js",
+      "types": "./dist/src/micro.d.ts"
+    },
+    "./compact": {
+      "import": "./dist/src/compact.js",
+      "types": "./dist/src/compact.d.ts"
+    },
+    "./balanced": {
+      "import": "./dist/src/balanced.js",
+      "types": "./dist/src/balanced.d.ts"
+    },
+    "./precise": {
+      "import": "./dist/src/precise.js",
+      "types": "./dist/src/precise.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "generate": "bun run scripts/generate.ts",
+    "build": "bun run generate && tsc",
+    "test": "bun test",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "bun run build && npm publish --provenance --access public"
+  },
+  "keywords": [
+    "email",
+    "free-email",
+    "disposable",
+    "bloom-filter",
+    "domain",
+    "validation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.4",
+    "@types/bun": "^1.2.4",
+    "bloomfilter": "^1.0.0",
+    "free-email-domains": "^1.2.14",
+    "typescript": "^5.7.3"
+  }
+}

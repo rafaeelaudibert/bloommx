@@ -1,5 +1,11 @@
 # bloommx
 
+## 1.0.3
+
+### Patch Changes
+
+- [`0a68fba`](https://github.com/rafaeelaudibert/bloommx/commit/0a68fbab236e5eae6240e32e388c2bfc80c5809f) Thanks [@rafaeelaudibert](https://github.com/rafaeelaudibert)! - chore: Migrate to tsup to simplify build process
+
 ## 1.0.2
 
 ### Patch Changes

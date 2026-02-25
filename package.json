@@ -3,33 +3,34 @@
   "version": "1.0.2",
   "description": "Lightweight free email domain checker via Bloom filter",
   "type": "module",
-  "main": "./dist/cjs/src/index.js",
-  "types": "./dist/src/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/src/index.js",
-      "require": "./dist/cjs/src/index.js",
-      "types": "./dist/src/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     },
     "./micro": {
-      "import": "./dist/src/micro.js",
-      "require": "./dist/cjs/src/micro.js",
-      "types": "./dist/src/micro.d.ts"
+      "types": "./dist/micro.d.ts",
+      "import": "./dist/micro.js",
+      "require": "./dist/micro.cjs"
     },
     "./compact": {
-      "import": "./dist/src/compact.js",
-      "require": "./dist/cjs/src/compact.js",
-      "types": "./dist/src/compact.d.ts"
+      "types": "./dist/compact.d.ts",
+      "import": "./dist/compact.js",
+      "require": "./dist/compact.cjs"
     },
     "./balanced": {
-      "import": "./dist/src/balanced.js",
-      "require": "./dist/cjs/src/balanced.js",
-      "types": "./dist/src/balanced.d.ts"
+      "types": "./dist/balanced.d.ts",
+      "import": "./dist/balanced.js",
+      "require": "./dist/balanced.cjs"
     },
     "./precise": {
-      "import": "./dist/src/precise.js",
-      "require": "./dist/cjs/src/precise.js",
-      "types": "./dist/src/precise.d.ts"
+      "types": "./dist/precise.d.ts",
+      "import": "./dist/precise.js",
+      "require": "./dist/precise.cjs"
     }
   },
   "files": [
@@ -38,7 +39,7 @@
   "sideEffects": false,
   "scripts": {
     "generate": "bun run scripts/generate.ts",
-    "build": "bun run generate && tsc && tsc -p tsconfig.cjs.json && cp cjs.package.json dist/cjs/package.json",
+    "build": "bun run generate && tsup",
     "test": "bun test",
     "changeset": "changeset",
     "version": "changeset version",
@@ -60,6 +61,7 @@
     "@types/bun": "^1.2.4",
     "bloomfilter": "^1.0.0",
     "free-email-domains": "^1.2.14",
+    "tsup": "^8.5.1",
     "typescript": "^5.7.3"
   }
 }

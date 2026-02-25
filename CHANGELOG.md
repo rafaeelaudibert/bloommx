@@ -1,5 +1,11 @@
 # bloommx
 
+## 1.0.2
+
+### Patch Changes
+
+- [`8c65e91`](https://github.com/rafaeelaudibert/bloommx/commit/8c65e919fd24ac11f17a081004edf00975af75dd) Thanks [@rafaeelaudibert](https://github.com/rafaeelaudibert)! - feat: Properly release cjs build
+
 ## 1.0.1
 
 ### Patch Changes

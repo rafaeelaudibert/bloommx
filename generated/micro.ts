@@ -1,5 +1,5 @@
 // Auto-generated — DO NOT EDIT
-// Source: free-email-domains@1.2.24 (4779 domains)
+// Source: free-email-domains@1.2.25 (4779 domains)
 // Tier: micro | FP rate: ~5% | m=29824 | k=5
 export const m = 29824;
 export const k = 5;

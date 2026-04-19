@@ -60,7 +60,7 @@
     "@changesets/cli": "^2.29.4",
     "@types/bun": "^1.2.4",
     "bloomfilter": "^1.0.0",
-    "free-email-domains": "^1.2.25",
+    "free-email-domains": "^1.2.26",
     "tsup": "^8.5.1",
     "typescript": "^5.7.3"
   }

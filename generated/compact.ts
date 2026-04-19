@@ -1,5 +1,5 @@
 // Auto-generated — DO NOT EDIT
-// Source: free-email-domains@1.2.25 (4779 domains)
+// Source: free-email-domains@1.2.26 (4779 domains)
 // Tier: compact | FP rate: ~1% | m=45824 | k=7
 export const m = 45824;
 export const k = 7;
